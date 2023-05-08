@@ -10,6 +10,7 @@ public class SpringDI {
         Store store = context.getBean(Store.class);
         store.add("Petr Arsentev");
         store.add("Ivan ivanov");
+        System.out.println("THIS MESSAGE SPECIALLY FOR EXERCISE 3. Dockerfile + maven [#505041]:");
         System.out.println("Содержимое первого созданного хранилища:");
         store.getAll().forEach(System.out::println);
         Store another = context.getBean(Store.class);

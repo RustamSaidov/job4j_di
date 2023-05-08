@@ -8,8 +8,14 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class StartUI {
 
-    @Autowired
+
+    /*@Autowired*/
     private Store store;
+
+    public StartUI(Store store) {
+        this.store = store;
+    }
+
     @Autowired
     private ConsoleInput consoleInput;
 
